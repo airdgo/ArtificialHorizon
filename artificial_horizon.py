@@ -1,5 +1,7 @@
 import pygame
 
+pygame.init()
+
 size = width, height = 500, 500
 bgColor = 255, 255, 255
 arrowColor = 0, 0, 0
@@ -9,15 +11,15 @@ pitchColor = 0, 0, 0
 
 screen = pygame.display.set_mode(size)
 
-a_surface = pygame.Surface((700,500), pygame.SRCALPHA)
+a_surface = pygame.Surface((width+200,height), pygame.SRCALPHA)
 a_surface.fill(botHorizon)
 
-b_surface = pygame.Surface((700,500), pygame.SRCALPHA)
+b_surface = pygame.Surface((width+200,height), pygame.SRCALPHA)
 b_surface.fill(botHorizon)
 
 def bg_surface():
     screen.blit(b_surface, (-100,0))
-    pygame.draw.rect(b_surface, topHorizon, ((0, 0),(700, 250)))
+    pygame.draw.rect(b_surface, topHorizon, ((0, 0),(width+200, height/2)))
 
 
 
@@ -28,7 +30,7 @@ def draw_indicator():
     pygame.draw.line(screen, arrowColor,(280,250), (400,250), 6)
 
 def draw_horizon():
-    pygame.draw.rect(a_surface, topHorizon, ((0, 0),(700, 250)))
+    pygame.draw.rect(a_surface, topHorizon, ((0, 0),(width+200, height/2)))
 
     xCoords = [[250, 340, 300, 340],[450, 360, 400, 360]]
 
@@ -41,6 +43,14 @@ def draw_horizon():
     
         pygame.draw.line(a_surface, pitchColor, (xCoords[0][i], yCoords),(xCoords[1][i], yCoords), 2)
 
+textColor = 0,0,0
+fontSize = 20
+font = pygame.font.SysFont("verdana", fontSize)
+
+def draw_values():
+    num0 = font.render("0", True, textColor)
+    a_surface.blit(num0, (width/2-fontSize, height/2-fontSize/2))
+    a_surface.blit(num0, (width - fontSize*2 , height/2 - fontSize/2))
 
 
 def blitRotateCenter(screen, surface, topleft, angle):
@@ -59,6 +69,7 @@ while state:
     bg_surface()
 
     draw_horizon()
+    draw_values()
     blitRotateCenter(screen,a_surface,(-100,0), 0)
     
     draw_indicator()
