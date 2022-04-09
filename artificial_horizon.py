@@ -17,7 +17,7 @@ def blitRotateCenter(surf, image, topleft, angle):
     surf.blit(rotated_image, new_rect)
 
 def draw():
-    blitRotateCenter(screen, interior, (-250,-250), 0)
+    blitRotateCenter(screen, interior, (-width/2,-height/2), 0)
     blitRotateCenter(screen, inel, (0,0), 0)
     screen.blit(frame, (0,0))
 
