@@ -4,8 +4,8 @@ Attitude indicator build with pygame and sockets to extract data from FlightGear
 
 ## Table of contents
 
-- [Overview](#overview) -[Screenshots](#screenshots)
-- [Instalation guide](#instalation-guide) -[Step 1](#step-1) -[Step 2](#step-2) -[Step 3](#step-3) -[Step 4](#step-4)
+- [Overview](#overview)
+- [Instalation guide](#instalation-guide)
 
 ## Overview
 
