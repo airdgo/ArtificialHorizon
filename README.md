@@ -13,9 +13,7 @@ Attitude indicator build with pygame and sockets to extract data from FlightGear
 
 ![](./screenshots/artificial_horizon.png)
 
-### Video presentation
-
-[Video presentation](https://www.youtube.com/watch?v=vvVtxxDRwpI&ab_channel=Airdog)
+### [Video presentation](https://www.youtube.com/watch?v=vvVtxxDRwpI&ab_channel=Airdog)
 
 ## Instalation guide
 
