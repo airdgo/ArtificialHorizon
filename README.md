@@ -1,6 +1,6 @@
-# Artificial horizon built with python -- windows support only
+# Artificial horizon built with python
 
-This is a program created using Python sockets to receive data from FlightGear and illustrate how the flying instrument operates in the airplane's cockpit using Pygame.
+This is a program created using Python sockets to receive data from FlightGear and illustrate how the flying instrument operates in the airplane's cockpit using Pygame. At the moment, this software only runs on Windows computers.
 
 ## Table of contents
 
