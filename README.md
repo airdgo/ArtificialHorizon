@@ -11,7 +11,8 @@ Attitude indicator build with pygame and sockets to extract data from FlightGear
 
 ### Screenshots
 
-![](./screenshots/artificial_horizon.png)
+<!-- ![](./screenshots/artificial_horizon.png) -->
+<img src="./screenshots/artificial_horizon.png" width="400"/>
 
 ### Video presentation
 
