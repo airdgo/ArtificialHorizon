@@ -1,6 +1,6 @@
 # Artificial horizon built with python -- windows support only
 
-Attitude indicator build with pygame and sockets to extract data from FlightGear and simulate the flight instrument.
+This is a program created using Python sockets to receive data from FlightGear and illustrate how the flying instrument operates in the airplane's cockpit using Pygame.
 
 ## Table of contents
 
@@ -11,12 +11,18 @@ Attitude indicator build with pygame and sockets to extract data from FlightGear
 
 ### Screenshots
 
-<!-- ![](./screenshots/artificial_horizon.png) -->
-<img src="./screenshots/artificial_horizon.png" width="400"/>
+<img src="./screenshots/artificial_horizon.png" width="400" alt="artificial horizon"/>
 
 ### Video presentation
 
 https://user-images.githubusercontent.com/87568470/178217898-db475a56-e7d7-4526-9cc7-5fe92c9f585e.mp4
+
+### Technologies
+
+- Python
+- Sockets
+- Pygame
+- FlightGear
 
 ## Instalation guide
 
